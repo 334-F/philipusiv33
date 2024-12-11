@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Comparación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 2px;
+        }
+        th {
+            background-color: white;
+        }
+        .red {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+        .blue {
+            background-color: blue;
+            color: black;
+        }
+        .gray {
+            background-color: gray;
+            color: black;
+        }
+        .yellow {
+            background-color: yellow;
+            color: black;
+            padding: 50px;
+        }
+        img {
+            width: 50px;
+            height: auto;
+        }
+        ul {
+
+            margin: 0;
+            text-align: left;
+        }
+        ul li {
+            color: red;
+            margin-left: 4%;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2"></th>
+            <th class="blue" colspan="3"><img src="IM1.png" alt="Imagen 1"></th>
+            <th class="blue" colspan="2"><img src="IM2.png" alt="Imagen 2"></th>
+        </tr>
+        <tbody>
+            <tr>
+                <th class="red" style="font-size: 14px;">Capacidad</th>
+                <th class="gray" style="font-size: 30px;">2GB</th>
+                <th class="gray" style="font-size: 30px;">4GB</th>
+                <th class="gray" style="font-size: 30px;">8GB</th>
+                <th class="gray" style="font-size: 30px;">32GB</th>
+                <th class="gray" style="font-size: 30px;">2GB</th>
+            </tr>
+        </tbody>
+        
+        <tbody>
+            <tr>
+                <th class="red">Colores</th>
+                <th class="blue" style="background-color: white;">Blanco</th>
+                <td class="blue" style="background-color: white;">
+                  <nav> <ul>
+                        <li>Negro</li>
+                        <li>Rosa</li>
+                        <li>Dorado</li>
+                    </ul>
+                </nav> 
+                </td>
+                <th class="blue" style="background-color: white;">Negro</th>
+                <td class="blue" colspan="2" style="background-color: blue;">
+                    <ul>
+                        <li>Negro</li>
+                        <li>Blanco</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tr>
+            <th class="red">Pantalla</th>
+            <th class="blue" colspan="3">3 pulgadas</th> 
+            <th class="blue" colspan="2">7 pulgadas</th>
+        </tr>
+        <tbody>
+            <tr>
+                <th class="red" rowspan="2">Tiempo<br>de Carga</th>
+                <th class="blue" colspan="3" rowspan="2" style="color: black;">1 hora</th>
+                <th class="yellow" colspan="2">5 horas</th> 
+            </tr>
+            <tr>
+                <th colspan="2" class="blue">3 minutos para <br> 75%</th>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <a href="index.html" class="return-home"><i class="fas fa-home"></i>Volver a la página de inicio</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>

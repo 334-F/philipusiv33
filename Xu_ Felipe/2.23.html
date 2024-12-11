@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Clase</title>
+    <style>
+        body {
+            
+            background-color: #f0f8ff;
+            margin: 10;
+            justify-content: center;
+        }
+
+        .container {
+            
+            width: 80%;
+            background: white;
+            padding-top: 0px;
+          
+        }
+
+        h1 {
+            color: #da3434;
+            font-size: 14.5px;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 0px;
+        }
+
+        .recreo {
+            background-color: yellow;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        thead th::first-letter {
+            font-size: 35px;
+         
+        
+        }
+        tr td:first-child {
+            background-color: green;
+            
+        }
+
+        input {
+            width: 28%;
+            padding: 8px;
+            border: 1px solid #c51919;
+            border-radius: 0px;
+            margin-bottom: 10px;
+        
+        }
+        span {
+            color: #941f1f;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HORARIO DE CLASE CURSO 2021-2022 de NOMBRE-ALUMNO</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>HORAS</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00</td>
+                    <td rowspan="2">Matemáticas</td>
+                    <td>Lengua</td>
+                    <td>Inglés</td>
+                    <td colspan="2">Ciencias</td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td>Historia</td>
+                    <td>Ciencias</td>
+                    <td>Matemáticas</td>
+                    <td>Lengua</td>
+                </tr>
+                
+                <tr>
+                <td>10:00</td>
+                    <td colspan="6" class="recreo">RECREO</td> 
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td>Inglés</td>
+                    <td rowspan="2">Ciencias</td>
+                    <td>Matemáticas</td>
+                    <td>Lengua</td>
+                    <td>Historia</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>Historia</td>
+                    <td>Ciencias</td>
+                    <td>Matemáticas</td>
+                    <td>Inglés</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <form action="#" method="post">
+            <label for="email">Email<span>*</span></label> <!-- Asterisco pegado -->
+            <input type="email" id="email" name="email" placeholder="Inserte email del destinatario" required>
+            <br>
+            <button type="submit">Enviar Horario</button>
+        </form>
+    </div>
+    <br>
+    <a href="index.html" class="return-home"><i class="fas fa-home"></i>Volver a la página de inicio</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>

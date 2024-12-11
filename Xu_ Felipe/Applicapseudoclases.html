@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Pseudoclases</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif
+        }
+        thead{
+    text-transform: uppercase; /* Convierte todo el texto a mayúsculas */
+        }
+
+        table {
+            width: 60%;
+            font-size: 15px;
+        }
+
+        thead tr {
+            background-color: #a52b2a;
+            color: white;
+            font-weight: bold;
+        }
+
+        tfoot tr {
+            background-color: #a52b2a;
+            color: white;
+            font-weight: bold;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #1c4c98;
+            color: #ffffff; /* Text color for even rows */
+        }
+
+        tbody tr:nth-child(even) td {
+            color: #1c4c98; /* Ensure text in even rows is white */
+        }
+        
+
+        
+        
+    </style>
+
+</head>
+<body>
+    <table>
+      <thead>
+        <tr>
+          <td>Concepto</td>
+          <td>Primer semestre</td>
+          <td>Segundo semestre</td>
+          <td>Total</td>
+        </tr>
+     </thead>
+    <tbody>
+      <tr>
+        <td>Alimentación</td>
+        <td>1500</td><td>1750</td><td>3250</td>
+      </tr>
+      <tr>
+        <td>Tecnología</td>
+        <td>1500</td><td>1750</td><td>3250</td>
+      </tr>
+        <tr>
+          <td>Deporte</td>
+          <td>1500</td><td>1750</td><td>3250</td>
+       </tr>
+       <tr>
+         <td>Calzado</td>
+         <td>1500</td><td>1750</td><td>3250</td>
+      </tr>
+      <tr>
+        <td>Viajes</td>
+        <td>1500</td><td>1750</td><td>3250</td>
+     </tr>
+     <tr>
+       <td>Papelería</td>
+       <td>1500</td><td>1750</td><td>3250</td>
+     </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>0000</td><td>0000</td><td>0000</td>
+      </tr>
+    </tfoot>
+    </table>
+    <a href="index.html" class="return-home"><i class="fas fa-home"></i>Volver a la página de inicio</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </body>
+</html>
